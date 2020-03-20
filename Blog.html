@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h2>Muj blog</h2>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>Clanek 1</h2>
+            <h5>Clanek vytvoren 20.03/20</h5>
+            <img src="fear.png" />
+            <p>Pridan text</p>
+            <p> Zacal jsem hrat Dying light, je to hra se zombiky, ktera dokaze zabavit na docela dlouho. </p>
+        </div>
+        <div class="card">
+            <h2>Clanek 2</h2>
+            <h5>Clanek vytvoren 20.03/17</h5>
+            <div class="fakeimg" style="height:200px;">Obrazek</div>
+            <p>Pridan text</p>
+            <p>Serial Zaklinac je velice dobry na zabaveni, zatim vydano 8 dilu.</p>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;">Obrazek</div>
+            <p>Jmenuju se Libor, je mi 19 let a brzy budu skladat maturitni zkousku</p>
+        </div>
+        <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg">Obrazek</div><br>
+            <div class="fakeimg">Obrazek</div><br>
+            <div class="fakeimg">Obrazek</div>
+        </div>
+        <div class="card">
+            <h3>Muzes mne sledovat na instagramu</h3>
+            <p>https://www.instagram.com/liborekk358/</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h2>Zapati</h2>
+</div>
+
+</body>
